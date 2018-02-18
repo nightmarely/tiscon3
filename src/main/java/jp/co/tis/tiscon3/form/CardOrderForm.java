@@ -10,8 +10,12 @@ public class CardOrderForm extends FormBase {
     private static final long serialVersionUID = 1L;
 
     @NotBlank
-    @Size(max = 60)
+    @Size(max = 30)
     private String kanjiName;
+
+    @NotBlank
+    @Size(max = 30)
+    private String kanjiName2;
 
     @NotBlank
     @Size(max = 90)
@@ -19,9 +23,19 @@ public class CardOrderForm extends FormBase {
     private String kanaName;
 
     @NotBlank
+    @Size(max = 90)
+    @Pattern(regexp = "^[ァ-ヶー 　]*$")
+    private String kanaName2;
+
+    @NotBlank
     @Size(max = 120)
     @Pattern(regexp = "^[a-zA-Z 　]*$")
     private String alphabetName;
+
+    @NotBlank
+    @Size(max = 120)
+    @Pattern(regexp = "^[a-zA-Z 　]*$")
+    private String alphabetName2;
 
     @NotBlank
     @Size(max = 10)
