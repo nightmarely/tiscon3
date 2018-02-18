@@ -28,18 +28,18 @@
 
                             <div class="ui horizontal divider">ご本人について</div>
 
-                            <div  class="field"   th:classappend="${form.hasErrors('kanjiName')} ? 'error'">
+                            <div class="field"   th:classappend="${form.hasErrors('kanjiName')} ? 'error'">
                                 <label>姓（漢字） 例）山田</label>
                                 <input type="text" name="kanjiName" th:value="${form.kanjiName}" />
                              </div>
-                            <div  class="field"  th:classappend="${form.hasErrors('kanjiName2')} ? 'error'">
+                            <div class="field"  th:classappend="${form.hasErrors('kanjiName2')} ? 'error'">
                                 <label>名（漢字） 例）太郎</label>
-                                <input type="text" name="kanjiName2" th:value="${form.kanjiName2}"  />
+                                <input type="text" name="kanjiName2" th:value="${form.kanjiName2}" />
                             </div>
 
                             <div class="field" th:classappend="${form.hasErrors('kanaName')} ? 'error'">
                                 <label>姓（カナ） 例）ヤマダ</label>
-                                <input type="text" name="kanaName" th:value="${form.kanaName}"/>
+                                <input type="text" name="kanaName" th:value="${form.kanaName}" />
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('kanaName2')} ? 'error'">
                                 <label>名（カナ） 例）タロウ</label>
@@ -52,7 +52,7 @@
                             <div class="field" th:classappend="${form.hasErrors('alphabetName2')} ? 'error'">
                                 <label>名（ローマ字） 例）TARO</label>
                                 <input type="text" name="alphabetName2" th:value="${form.alphabetName2}"/>
-                   ）         </div>
+                            </div>
                             <div class="field" th:classappend="${form.hasErrors('gender')} ? 'error'">
                                 <label>性別</label>
                                 <input type="radio" name="gender" value="male" th:checked="${form.gender}=='male'"/>男性
@@ -90,7 +90,7 @@
                             <div class="field" th:classappend="${form.hasErrors('zip11')} ? 'error'">
                                 <label>郵便番号   例）000-0000</label>
                                 <!-- ▼郵便番号入力フィールド(7桁) -->
-                                <input type="text" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+                                <input type="text" name="zipCode" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('addr11')} ? 'error'">
                                 <label>ご住所(自動入力)</label>
