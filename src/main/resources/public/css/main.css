@@ -10,14 +10,36 @@ body {
     padding-top: 80px;
 }
 
+.ui.information.container.center.aligned {
+    text-align: left;
+    position: absolute; top: 100px; left: 750px;
+}
+
+
 a.logo {
     font-family: 'Exo', sans-serif;
     color: #f33;
 }
 
+.ui.header{
+
+}
+
 .bland-message {
     font-family: "Sawarabi Mincho";
     font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 80px;
+
+}
+
+.card-comment {
+    font-weight: 100;
+    margin-bottom: 150px;
+}
+
+.ui.primary.button{
+    font-size: 16px;
 }
 
 div.center.column {
@@ -63,23 +85,21 @@ ul.label {
 }
 
 .photo-show {
-    height: 300px;
+    height: auto;
     margin: auto;
     max-width: 100%;
     position: relative;
-    width: 440px;
+    width: 250px;
 }
 
 .photo-show img {
-    animation: show 9s infinite;
+    animation: show 30s infinite;
     height: auto;
     max-width: 100%;
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 240px;
+    left: -290px;
 }
 
 @keyframes show {
@@ -102,17 +122,24 @@ ul.label {
 }
 
 .photo-show img:nth-of-type(2) {
-    animation-delay: 3s;
+    animation-delay: 10s;
 }
 
 .photo-show img:nth-of-type(3) {
-    animation-delay: 6s;
+    animation-delay: 20s;
 }
 
 .photo-show img {
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .photo-show:hover img {
     animation-play-state: paused;
+}
+
+.photo-show-card123 img {
+     height: auto;
+     width: 80px;
+     position: relative; top: 500px; left: 350px;
+
 }
